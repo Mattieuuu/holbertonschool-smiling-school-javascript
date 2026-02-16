@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiling School - Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white">
+      <nav class="navbar navbar-expand-md navbar-dark container py-3">
+        <a class="navbar-brand brand-font" href="1-homepage.html">SmileSchool</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="1-homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="0-pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="0-courses.html">Courses</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="jumbotron jumbotron-fluid text-center mb-0 bg-light">
+        <div class="container py-4 py-md-5">
+          <h1 class="display-4">Learn to smile better</h1>
+          <p class="lead mb-4">Bootstrap-powered layout with responsive breakpoints at 576px and 768px.</p>
+          <a href="0-courses.html" class="btn btn-primary btn-lg px-4">Start Learning</a>
+        </div>
+      </section>
+
+      <section class="py-5 quotes-bg text-white">
+        <div class="container">
+          <div id="quotes-loader" class="loader"></div>
+
+          <div id="quotes-carousel" class="carousel slide d-none" data-ride="carousel">
+            <div id="quotes-carousel-inner" class="carousel-inner"></div>
+
+            <a class="carousel-control-prev" href="#quotes-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#quotes-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Beginner</h5>
+                <p class="card-text">Start with essential smile techniques and confidence fundamentals.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Intermediate</h5>
+                <p class="card-text">Improve expression, timing, and camera-ready social confidence.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Advanced</h5>
+                <p class="card-text">Master presence and communication with pro-level smile coaching.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <p class="mb-2 mb-sm-0">© <span class="js-current-year"></span> SmileSchool</p>
+        <a href="0-pricing.html" class="btn btn-outline-light btn-sm">See pricing</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

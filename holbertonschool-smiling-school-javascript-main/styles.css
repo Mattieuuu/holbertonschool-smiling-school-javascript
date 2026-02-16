@@ -1,0 +1,243 @@
+/* =======================================================================
+   SMILING SCHOOL - CUSTOM STYLESHEET
+   Minimalist approach using Bootstrap foundations
+   ======================================================================= */
+
+/* --- GLOBAL BASE STYLES --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #071629;
+  line-height: 1.6;
+}
+
+/* --- TYPOGRAPHY & BRANDING --- */
+.brand-font {
+  font-family: "Coiny", cursive;
+  font-display: swap;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* --- BACKGROUND SECTIONS --- */
+.hero-bg {
+  background: linear-gradient(rgba(7, 22, 41, 0.65), rgba(7, 22, 41, 0.65)),
+    url("https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1500&q=80") 
+    center center/cover no-repeat;
+  min-height: 100vh;
+}
+
+.pricing-hero-bg {
+  background: linear-gradient(rgba(7, 22, 41, 0.8), rgba(7, 22, 41, 0.8)),
+    url("https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1500&q=80")
+    center center/cover no-repeat;
+}
+
+.section-dark {
+  background-color: #071629;
+}
+
+/* --- UI COMPONENTS --- */
+.logo-mark {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.avatar-sm {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  color: #c271ff;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.play-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card-thumb-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-thumb-wrap .play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+/* --- BUTTON INTERACTIONS & ANIMATIONS --- */
+.btn:hover,
+.btn:active,
+.btn:focus {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background-color: #c271ff;
+  border-color: #c271ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #b45be6;
+  border-color: #b45be6;
+  box-shadow: 0 6px 16px rgba(194, 113, 255, 0.4);
+}
+
+.text-primary {
+  color: #c271ff !important;
+}
+
+.bg-primary {
+  background-color: #c271ff !important;
+}
+
+.quotes-bg {
+  background-color: #c271ff;
+}
+
+.courses-filters .form-control,
+.courses-filters .custom-select {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 0;
+}
+
+.courses-filters .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.courses-filters .custom-select option {
+  color: #071629;
+}
+
+.courses-hero {
+  min-height: 180px;
+}
+
+.social-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  color: #071629;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- LOADING ANIMATION COMPONENT --- */
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #c271ff;
+  border-radius: 50%;
+  margin: 2rem auto;
+  animation: rotate-loading 2s linear infinite;
+  position: relative;
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #c271ff;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+@keyframes rotate-loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- CUSTOM CAROUSEL CONTROLS --- */
+.tutorials-carousel .carousel-control-prev,
+.tutorials-carousel .carousel-control-next {
+  width: 8%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.tutorials-carousel .carousel-control-prev:hover,
+.tutorials-carousel .carousel-control-next:hover {
+  opacity: 1;
+}
+
+.tutorials-carousel .carousel-control-prev-icon,
+.tutorials-carousel .carousel-control-next-icon {
+  filter: invert(60%) sepia(1) hue-rotate(240deg);
+  transition: filter 0.3s ease;
+}
+
+/* --- VIDEO CARD ENHANCEMENTS --- */
+.tutorial-stars {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* --- RESPONSIVE DESIGN IMPROVEMENTS --- */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .loader {
+    width: 60px;
+    height: 60px;
+    border-width: 8px;
+  }
+}

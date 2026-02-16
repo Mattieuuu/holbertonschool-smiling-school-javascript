@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiling School - Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero-bg text-white">
+      <nav class="navbar navbar-expand-md navbar-dark container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+          <span class="logo-mark mr-2">✦✦</span>
+          <strong>SmileSchool</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto text-uppercase small font-weight-bold">
+            <li class="nav-item active"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="container text-center py-5">
+        <h1 class="hero-title mb-0">Get schooled</h1>
+        <p class="text-uppercase font-weight-bold mt-2">Smiles &nbsp; Grin &nbsp; Laugh</p>
+        <a href="#" class="btn btn-primary rounded-pill px-4 text-uppercase small font-weight-bold mt-2">Register for free</a>
+
+        <h5 class="mt-5 mb-4"><span class="text-primary">Learn</span> from the pros</h5>
+        <div class="row justify-content-center pb-5">
+          <div class="col-6 col-md-3 mb-4">
+            <img class="rounded-circle mb-2" src="https://smileschool-api.s3.amazonaws.com/profile_1.jpg" alt="Phillip Massey" width="120" height="120" />
+            <p class="mb-0 font-weight-bold">Phillip Massey</p>
+            <small>Smile of the year</small>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img class="rounded-circle mb-2" src="https://smileschool-api.s3.amazonaws.com/profile_2.jpg" alt="Nannie Lawrence" width="120" height="120" />
+            <p class="mb-0 font-weight-bold">Nannie Lawrence</p>
+            <small>Best little smile</small>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img class="rounded-circle mb-2" src="https://smileschool-api.s3.amazonaws.com/profile_3.jpg" alt="Bruce Walters" width="120" height="120" />
+            <p class="mb-0 font-weight-bold">Bruce Walters</p>
+            <small>Best friend smile</small>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img class="rounded-circle mb-2" src="https://smileschool-api.s3.amazonaws.com/profile_4.jpg" alt="Henry Hughes" width="120" height="120" />
+            <p class="mb-0 font-weight-bold">Henry Hughes</p>
+            <small>24h smiles winner</small>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="py-5 quotes-bg text-white">
+        <div class="container">
+          <div id="quotes-loader" class="loader"></div>
+
+          <div id="quotes-carousel" class="carousel slide d-none" data-ride="carousel" data-interval="false">
+            <div id="quotes-carousel-inner" class="carousel-inner"></div>
+
+            <a class="carousel-control-prev" href="#quotes-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#quotes-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Most <span class="text-primary">popular</span> tutorials</h2>
+
+          <div id="popular-loader" class="loader"></div>
+
+          <div
+            id="popular-carousel"
+            class="carousel slide d-none tutorials-carousel"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <div id="popular-carousel-inner" class="carousel-inner"></div>
+
+            <a class="carousel-control-prev" href="#popular-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#popular-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-dark text-white py-5 text-center">
+        <div class="container">
+          <h2 class="mb-5"><span class="text-primary">Free</span> membership</h2>
+          <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="text-primary mb-3">☺</h2>
+              <p class="font-weight-bold mb-1">Lorem ipsum</p>
+              <small>Lorem ipsum dolor sit amet, consectetur.</small>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="text-primary mb-3">☺</h2>
+              <p class="font-weight-bold mb-1">Lorem ipsum</p>
+              <small>Lorem ipsum dolor sit amet, consectetur.</small>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="text-primary mb-3">☺</h2>
+              <p class="font-weight-bold mb-1">Lorem ipsum</p>
+              <small>Lorem ipsum dolor sit amet, consectetur.</small>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <h2 class="text-primary mb-3">☺</h2>
+              <p class="font-weight-bold mb-1">Lorem ipsum</p>
+              <small>Lorem ipsum dolor sit amet, consectetur.</small>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary rounded-pill px-4 text-uppercase small font-weight-bold mt-2">Register for free</a>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4"><span class="text-primary">Latest</span> videos</h2>
+
+          <div id="latest-loader" class="loader"></div>
+
+          <div
+            id="latest-carousel"
+            class="carousel slide d-none tutorials-carousel"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <div id="latest-carousel-inner" class="carousel-inner"></div>
+
+            <a class="carousel-control-prev" href="#latest-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#latest-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-dark text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <p class="mb-2 mb-sm-0"><span class="logo-mark mr-2">✦✦</span> SmileSchool</p>
+        <div>
+          <span class="social-dot mr-2">f</span>
+          <span class="social-dot mr-2">t</span>
+          <span class="social-dot">i</span>
+        </div>
+      </div>
+      <p class="text-center text-muted mb-0 small mt-2">© <span class="js-current-year"></span> smileschool</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

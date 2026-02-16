@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiling School - Courses</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero-bg text-white">
+      <nav class="navbar navbar-expand-md navbar-dark container py-3">
+        <a class="navbar-brand d-flex align-items-center" href="homepage.html">
+          <span class="logo-mark mr-2">✦✦</span>
+          <strong>SmileSchool</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto text-uppercase small font-weight-bold">
+            <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item active"><a class="nav-link" href="courses.html">Courses</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="container courses-hero d-flex align-items-center justify-content-center text-center py-4">
+        <h1 class="mb-0 h2">"Don't cry because it's over. Smile because it happened."</h1>
+      </section>
+    </header>
+
+    <main>
+      <section class="py-4 quotes-bg text-white courses-filters">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <label for="courses-keywords" class="small text-uppercase font-weight-bold mb-2">Keywords</label>
+              <input
+                id="courses-keywords"
+                type="search"
+                class="form-control"
+                placeholder="Search by keywords"
+              />
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <label for="courses-topic" class="small text-uppercase font-weight-bold mb-2">Topic</label>
+              <select id="courses-topic" class="custom-select"></select>
+            </div>
+            <div class="col-12 col-md-4">
+              <label for="courses-sort" class="small text-uppercase font-weight-bold mb-2">Sort by</label>
+              <select id="courses-sort" class="custom-select"></select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-light">
+        <div class="container">
+          <p id="courses-count" class="text-muted mb-4"></p>
+          <div id="courses-loader" class="loader d-none"></div>
+          <div id="courses-results" class="row"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-dark text-white py-4">
+      <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+        <p class="mb-2 mb-sm-0"><span class="logo-mark mr-2">✦✦</span> SmileSchool</p>
+        <div>
+          <span class="social-dot mr-2">f</span>
+          <span class="social-dot mr-2">t</span>
+          <span class="social-dot">i</span>
+        </div>
+      </div>
+      <p class="text-center text-muted mb-0 small mt-2">© <span class="js-current-year"></span> smileschool</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
